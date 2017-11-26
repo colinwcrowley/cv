@@ -216,6 +216,7 @@
 \def\@printcentername{\begingroup
   % print the name centered
   \leavevmode\hbox to \textwidth{\hfil\@tablebox{\namefont\@name}\hfil}\par
+  \leavevmode\hbox to \textwidth{\hfil\@tablebox{\@email}\hfil}\par
   \@ifundefined{@addressone}{%
     % do nothing
   }{%
@@ -486,6 +487,7 @@
 % use this to define your name
 %
 \def\name#1{\def\@name{#1}}
+\def\email#1{\def\@email{#1}}
 
 \def\@name{}
 

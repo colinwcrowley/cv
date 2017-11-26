@@ -23,7 +23,10 @@
 \documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+%\usepackage{newcent} % To change the default font to the new century 
+%schoolbook postscript font uncomment this line and comment the one 
+%above
+\usepackage{amsmath}
 
 \newsectionwidth{0pt} % Stops section indenting
 
@@ -33,7 +36,8 @@
 %	YOUR NAME AND ADDRESS(ES) SECTION
 %----------------------------------------------------------------------------------------
 
-\name{Colin Crowley\\ \\} % Your name at the top
+\name{Colin Crowley\\} % Your name at the top
+\email{ccrowle1@swarthmore.edu\\ \\} % Your name at the top
 
 % If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
@@ -47,15 +51,15 @@ PA 15217 \\ (412) 992-7787} % Your address 2
 
 \begin{resume}
 
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
+%%----------------------------------------------------------------------------------------
+%%	OBJECTIVE SECTION
+%%----------------------------------------------------------------------------------------
 
-\section{\centerline{OBJECTIVE}}
+%\section{\centerline{OBJECTIVE}} % perhaps not needed
 
-\vspace{8pt} % Gap between title and text
+%\vspace{8pt} % Gap between title and text
 
-Admission to a doctoral program in mathematics.
+%Admission to a doctoral program in mathematics.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -65,9 +69,12 @@ Admission to a doctoral program in mathematics.
 
 \vspace{8pt} % Gap between title and text
  
-{\sl Expected bachelor of Arts}, Mathematics \\ 
-Swarthmore College, Swarthmore, PA \hfill May 2018\\
+{\sl Bachelor's degree}, Mathematics \\ 
+Swarthmore College, Swarthmore, PA \hfill Expected Spring 2018\\
 Math GPA: 4.00, Overall GPA: 3.88
+
+{\sl Study Abroad}\\
+Budapest Semesters in Mathematics, Budapest Hungary \hfill Fall 2017
 
 %----------------------------------------------------------------------------------------
  
@@ -77,14 +84,14 @@ Math GPA: 4.00, Overall GPA: 3.88
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{ACCADEMIC AND RESEARCH EXPERIENCE}} 
+\section{\centerline{ACADEMIC AND RESEARCH EXPERIENCE}}
 
 \vspace{8pt} % Gap between title and text
 
 {\bf Research in algebra and matroid theory} \hfill June -- August 2017 \\
 Supervised by Professor Noah Giansiracusa at Swarthmore
 \begin{itemize} \itemsep -2pt % Reduce space between items
-\item Using the cryptomorphism between a tropical Plucker vector and a 
+        \item Using the cryptomorphism between a tropical Pl\"{u}cker vector and a 
     matroid, we studied matroids from the perspectives of 
         idempotent module theory and tropical linear algebra.
 \end{itemize}
@@ -96,90 +103,81 @@ Supervised by Florian Metz at Carnegie Mellon
         introduction to speech recognition systems.
 \end{itemize}
 
-{\bf Teaching aid at computer science summer program} \hfill June -- August 2015
+{\bf Teaching aid at Leap summer program} \hfill June -- August 2015
     \\[2pt]
-Taught the advanced programing track
+    Computer science summer program at Carnegie Mellon
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Guided students through the following problems\\
-            {\em Convex Hull, Dynamic Programing, Minimax algorithm to make a Connect Four AI }
+        \item I taught the advanced programming track, including...
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
 \vspace{0.2in} % Some whitespace between sections
 %----------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------- %	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PUBLICATIONS}} 
+
+\vspace{15pt} % Gap between title and text
+Colin Crowley, Noah Giansiracusa, and Joshua Mundinger. \emph{A 
+    module-theoretic approach to matroids}. To be submitted for 
+        publication in either Algebraic Combinatorics or Procedings of 
+        the AMS
+
+%----------------------------------------------------------------------------------------
+
+\vspace{0.2in} % Some whitespace between sections
+
 \section{\centerline{WORK EXPERIENCE}} 
 
 \vspace{8pt} % Gap between title and text
 
 {\bf Software engineering intern} \hfill June -- August 2016
     \\[2pt]
-Worked at Bazaarvoice inc. in Austin Texas.
+Bazaarvoice inc. in Austin Texas.
 \begin{itemize} \itemsep -2pt % Reduce space between items
-\item Worked on a team with three engineers to develop a resilient 
-    automated tool for making changes to the company's database 
+\item Worked on a team with three engineers to develop a tool for 
+    deleting data from the company's database, which is 
+    still used and maintained.
 \end{itemize}
 
-{\bf Instructor at fencing summer camp} \hfill June -- August 2013 and 
-2014
+
+{\bf Instructor at Summer Dreamers Academy} \hfill June -- August 2013, 
+June -- August 2014
     \\[2pt]
-    Taught fencing to two classes of twenty fifth graders
+    Fencing instructor
+    \begin{itemize} \itemsep -2pt % Reduce space between items
+    \item I taught fencing footwork, bladeword, and the rules of fencing 
+        to two classes of 20 fourth and fifth graders.
+    \end{itemize}
+
 % \begin{itemize} \itemsep -2pt % Reduce space between items
 % \end{itemize}
 
 
 \vspace{0.2in} % Some whitespace between sections
 
-\section{\centerline{PUBLICATIONS}}
-
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{COMPUTER SKILLS}}
-
-\vspace{8pt} % Gap between title and text
-
-Experienced in SPSS, BMDP statistical packages; LOTUS 1-2-3, Personal Editor 
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{PUBLICATIONS}} 
-
-\vspace{15pt} % Gap between title and text
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item ``Job Analysis - A True Picture," Journal of Headhunters, Vol. 5, Number 3. Fall 1990 
-\item ``The Fine Tuning of Interpersonal Skills," Journal of Recruiting/Hiring, Vol. 16, Number 7, August 1990
-\end{itemize}
+\section{\centerline{Languages and tools}}
+\begin{align*}
+    &\text{Java}  &&\text{Advanced}\\
+    &\text{Python}  &&\text{Advanced}\\
+    &\text{Javascript}  &&\text{Advanced}\\
+    &\text{\LaTeX}   &&\text{Advanced}\\
+    &\text{Mathematica}  &&\text{Proficient}\\
+    &\text{Common Lisp}  &&\text{Proficient}\\
+    &\text{C++}  &&\text{Proficient}\\
+    &\text{C}  &&\text{Familiar}\\
+\end{align*}
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
+\vspace{0.2in} % Some whitespace between section
 
-%----------------------------------------------------------------------------------------
-%	MEMBERSHIPS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{MEMBERSHIPS}} 
-
-\vspace{-5pt} % Reduce space between section title and contents
-
-\begin{center}
-American Psychological Association, Student Affiliate \\
-Vice President of Activities, RPI Weight-training Club \\ 
-Chairperson, Entertainment Committee, Utica College \\ 
-Latin-American Student Union, Utica College \\
-Member All-American Nautilus 
-\end{center}
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	HONORS SECTION
@@ -187,31 +185,16 @@ Member All-American Nautilus
 
 \section{\centerline{HONORS}} 
 
-\vspace{-5pt} % Reduce space between section title and contents
+\vspace{8pt} % Gap between title and text
+% \vspace{-5pt} % Reduce space between section title and contents
 
 \begin{center}
-Full tuition assistantship, Rensselaer Polytechnic Institute \\
-PSI CHI National Honor Society \\
-PHI THETA KAPPA National Honor Society 
+    \begin{itemize}
+        \item Swarthmore College Honors Major\\
+        \item Winchester Thurston Cum Laude Society Member
+    \end{itemize}
 \end{center}
 
 %----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{INTERESTS}} 
-
-\vspace{-5pt} % Reduce space between section title and contents
-
-\begin{center}
-Classical piano, jazz, bodybuilding/aerobic exercise, cooking, dancing
-\end{center} 
-
-%----------------------------------------------------------------------------------------
-
 \end{resume} 
 \end{document}
